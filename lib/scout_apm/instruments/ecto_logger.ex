@@ -57,7 +57,7 @@ defmodule ScoutApm.Instruments.EctoLogger do
       if table do
         "#{command}##{table}"
       else
-        "#{command}"
+        "#{inspect(command)}"
       end
     else _ ->
         "SQL"
